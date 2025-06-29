@@ -13,7 +13,7 @@ local assets = {
         ['vware/assets/search.png'] = 'rbxassetid://81893825403118';
 };
 
-local oldgetcustomasset = getcustomasset or getsynasset
+local oldgetcustomasset = getcustomasset or getsynasset;
 local getcustomasset = function(path)
         if oldgetcustomasset then
                 local success, result = pcall(oldgetcustomasset, path);
